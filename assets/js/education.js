@@ -4,66 +4,135 @@ AOS.init();
 
 const moocs = document.querySelector(".moocs");
 const moocscards = [
+
   {
-    title: "Data Science",
-    cardImage: "assets/images/education-page/coursera1.png",
-    moocLink: "https://www.coursera.org/browse/data-science",
+    title: "Full Stack Web Development",
+    cardImage: "assets/images/education-page/WebDev.jpeg",
+    moocLink: "https://www.udemy.com/certificate/UC-316ed0ff-10d4-4642-8385-54ce275bfbf8/",
   },
   {
-    title: "Cryptography",
-    cardImage: "assets/images/education-page/udemy.png",
-    moocLink: "https://www.udemy.com/course/cryptography-for-beginners/",
+    title: "Data Structures and Algorithms",
+    cardImage: "assets/images/education-page/DSA.jpeg",
+    moocLink: "https://www.udemy.com/certificate/UC-c400bebf-8294-4cfd-8042-46f8e7a8b0ae/",
+  },
+  // {
+  //   title: "Flutter App Development",
+  //   cardImage: "assets/images/education-page/Flutter.jpeg",
+  //   moocLink: "https://www.udemy.com/certificate/UC-d7f1cfbf-4062-4787-accd-15d39b72db8f/",
+  // },
+  // {
+  //   title: "Complete React JS Course",
+  //   cardImage: "https://udemy-certificate.s3.amazonaws.com/image/UC-7f90ef9b-33c5-40ee-aa6a-9de327989da4.jpg?v=1603277604000",
+  //   moocLink: "https://www.udemy.com/certificate/UC-7f90ef9b-33c5-40ee-aa6a-9de327989da4/",
+  // },
+  {
+    title: "AI applications in Azure",
+    cardImage: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~9A879RXF6TNM/CERTIFICATE_LANDING_PAGE~9A879RXF6TNM.jpeg",
+    moocLink: "https://www.udemy.com/certificate/UC-d7f1cfbf-4062-4787-accd-15d39b72db8f/",
   },
   {
-    title: "Machine Learning",
-    cardImage: "assets/images/education-page/coursera1.png",
+    title: "AWS on ML ",
+    cardImage: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~CFR933QMXUMB/CERTIFICATE_LANDING_PAGE~CFR933QMXUMB.jpeg",
+    moocLink: "https://www.udemy.com/certificate/UC-316ed0ff-10d4-4642-8385-54ce275bfbf8/",
+  },
+  {
+    title: "Career Edge Training on Soft skills ",
+    cardImage: "assets/images/education-page/IO.png",
+    moocLink: "https://www.udemy.com/certificate/UC-c400bebf-8294-4cfd-8042-46f8e7a8b0ae/",
+  },
+ 
+  {
+    title: "Data Engineering fusing Python",
+    cardImage: "assets/images/education-page/DC-DE.png",
+    moocLink: "https://www.datacamp.com/statement-of-accomplishment/course/c9a60c926a34406f1d44e46ab2cb91e8aeab2220",
+  },
+  // {
+  //   title: "Intro to Python",
+  //   cardImage: "assets/images/education-page/py.png",
+  //   moocLink: "https://www.coursera.org/learn/machine-learning",
+  // },
+
+  // {
+  //   title: "Intro to SQL",
+  //   cardImage: "assets/images/education-page/SQL.png",
+  //   moocLink: "https://www.coursera.org/learn/machine-learning",
+  // },
+
+
+  {
+    title: "Intro to ML",
+    cardImage: "assets/images/education-page/Kag.png",
+    moocLink: "https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256",
+  },
+
+  {
+    title: "Intro to Datascience",
+    cardImage: "assets/images/education-page/Ed-py.png",
+    moocLink: "https://courses.edx.org/certificates/9ed134fcaf3d4e689b40948491745e79",
+  },
+  // {
+  //   title: "Android App Development",
+  //   cardImage: "assets/images/education-page/Pyba.png",
+  //   moocLink: "https://courses.edx.org/certificates/748697de8bb74ea395ae384102d3b7eb",
+  // },
+  {
+    title: "Angular - Front End Development",
+    cardImage: "assets/images/education-page/GL.png",
+    moocLink: "https://www.udacity.com/course/intro-to-html-and-css--ud001",
+  },
+  {
+    title: "Python Assessment Completion",
+    cardImage: "assets/images/education-page/Hack.png",
     moocLink: "https://www.coursera.org/learn/machine-learning",
   },
   {
-    title: "Introduction to HTML 5",
-    cardImage: "assets/images/education-page/udacity_logo.png",
-    moocLink: "https://www.udacity.com/course/intro-to-html-and-css--ud001",
+    title: "Cyber Security Fundamnetals",
+    cardImage: "assets/images/education-page/Cursa.png",
+    moocLink: "https://www.coursera.org/learn/machine-learning",
   },
   {
-    title: "Introduction to CSS 3",
-    cardImage: "assets/images/education-page/udacity_logo.png",
-    moocLink: "https://www.udacity.com/course/intro-to-html-and-css--ud001",
+    title: "Intro to NLP ",
+    cardImage: "assets/images/education-page/NLP.png",
+    moocLink: "https://www.udemy.com/certificate/UC-316ed0ff-10d4-4642-8385-54ce275bfbf8/",
   },
-  {
-    title: "Javascript",
-    cardImage: "assets/images/education-page/udacity_logo.png",
-    moocLink: "https://www.udacity.com/course/intro-to-javascript--ud803",
-  },
-  {
-    title: "Bootstrap 4",
-    cardImage: "assets/images/education-page/udemy.png",
-    moocLink: "https://www.udemy.com/course/bootstrap-4-tutorials/",
-  },
-  {
-    title: "Intro to React",
-    cardImage: "assets/images/education-page/EdX.png",
-    moocLink: "https://www.edx.org/learn/reactjs",
-  },
-  {
-    title: "Intro to React Native",
-    cardImage: "assets/images/education-page/coursera1.png",
-    moocLink: "https://www.coursera.org/lecture/react-native/introduction-to-react-native-Eax0D",
-  },
-  {
-    title: "NodeJS, Express and MongoDB",
-    cardImage: "assets/images/education-page/coursera1.png",
-    moocLink: "https://www.coursera.org/learn/server-side-nodejs",
-  },
-  {
-    title: "XML-AJAX",
-    cardImage: "assets/images/education-page/udemy.png",
-    moocLink: "https://www.udemy.com/course/xml-from-beginner-to-expert/",
-  },
-  {
-    title: "Data Structures & Algorithms",
-    cardImage: "assets/images/education-page/udacity_logo.png",
-    moocLink: "https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256",
-  },
+  // {
+  //   title: "Data Structures and Algorithms",
+  //   cardImage: "assets/images/education-page/SK.png",
+  //   moocLink: "https://www.udemy.com/certificate/UC-c400bebf-8294-4cfd-8042-46f8e7a8b0ae/",
+  // },
+  // {
+  //   title: "Flutter App Development",
+  //   cardImage: "assets/images/education-page/FF.png",
+  //   moocLink: "https://www.udemy.com/certificate/UC-d7f1cfbf-4062-4787-accd-15d39b72db8f/",
+  // },
+  // {
+  //   title: "Full Stack Web Development",
+  //   cardImage: "assets/images/education-page/NLP.png",
+  //   moocLink: "https://www.udemy.com/certificate/UC-316ed0ff-10d4-4642-8385-54ce275bfbf8/",
+  // },
+  // {
+  //   title: "Data Structures and Algorithms",
+  //   cardImage: "assets/images/education-page/SK.png",
+  //   moocLink: "https://www.udemy.com/certificate/UC-c400bebf-8294-4cfd-8042-46f8e7a8b0ae/",
+  // },
+  // {
+  //   title: "Flutter App Development",
+  //   cardImage: "assets/images/education-page/CoreP.png",
+  //   moocLink: "https://www.udemy.com/certificate/UC-d7f1cfbf-4062-4787-accd-15d39b72db8f/",
+  // },
+  // https://www.sololearn.com/Certificate/1060-6894217/jpg/
+  // {
+  //   title: "Full Stack Web Development",
+  //   cardImage: "https://www.sololearn.com/Certificate/1060-6894217/jpg/",
+  //   moocLink: "https://www.udemy.com/certificate/UC-316ed0ff-10d4-4642-8385-54ce275bfbf8/",
+  // },
+  // {
+  //   title: "Data Structures and Algorithms",
+  //   cardImage: "assets/images/education-page/skpy.png",
+  //   moocLink: "https://www.udemy.com/certificate/UC-c400bebf-8294-4cfd-8042-46f8e7a8b0ae/",
+  // },
+ 
+
 ];
 
 const experience = [
@@ -117,9 +186,10 @@ const showCards = () => {
             <div class="card mb-3 mx-auto">
                <div class="content">
                   <div class="content-overlay"></div>
-                    <img src=${cardImage} class="card-img-top content-image">     
+                    <img src=${cardImage} height="180px" class="card-img-top content-image">     
                   <div class="content-details fadeIn-bottom">
-                    <a href="${moocLink}" target="_blank"><i class="fa fa-info-circle fa-2x" aria-hidden="true" style="color: white;"></i></a>                                   
+                    <a href="${moocLink}" target="_blank"><i class="fa fa-info-circle fa-2x"
+                     aria-hidden="true" style="color: white;"></i></a>                                   
                   </div>
                 </div>
                 <div class="card-body">
@@ -176,31 +246,23 @@ document.addEventListener("DOMContentLoaded", showCards1);
 const timeline = document.querySelector(".timeline");
 const timelinesection = [
   {
-    heading: "Massachusetts Institute of Technology",
-    image: "./assets/images/education-page/timeline-1.svg",
-    subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
-    description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
+    heading: "R.M.K Engineering College",
+    image: "./assets/images/education-page/RMK_Engineering_College.jpg",
+    subheading: "Bachelors of Science, Computer Science & Engineering, (2016-2020)",
+    description: "<li> CGPA - 8.56/10 </li><li>Top 1% in the department</li>",
   },
 
   {
-    heading: "Massachusetts Institute of Technology",
-    image: "./assets/images/education-page/timeline-1.svg",
-    subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
-    description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
+    heading: "Higher Secondary - Velammal Matriculation Higher Secondary School",
+    image: "./assets/images/education-page/velammal.png",
+    subheading: "Maths - Biology (2014 - 2016)",
+    description: "<li> 1159/1200 </li><li> 100% Scholarship Holder </li><li>Top 1% in the department</li>",
   },
-
   {
-    heading: "Massachusetts Institute of Technology",
-    image: "./assets/images/education-page/timeline-1.svg",
-    subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
-    description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
-  },
-
-  {
-    heading: "Massachusetts Institute of Technology",
-    image: "./assets/images/education-page/timeline-1.svg",
-    subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
-    description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
+    heading: "High School - Velammal Matriculation Higher Secondary School",
+    image: "./assets/images/education-page/velammal.png",
+    subheading: "(2012 - 2014)",
+    description: "<li> 494/500 </li><li>State 6th Rank</li><li>Top 1% in the department</li>",
   },
 ];
 

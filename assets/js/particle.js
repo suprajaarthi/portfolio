@@ -3,34 +3,34 @@
 particlesJS('particles-js', {
 	particles: {
 		number: {
-			value: 140,
+			value: 20,
 			density: {
 				enable: true,
-				value_area: 800
+				value_area: 380
 			}
 		},
 		color: {
-			value: [ '#2EB67D', '#ECB22E', '#E01E5B', '#36C5F0' ]
+			value: [ '#54e346', '#54e346', '#54e346', '#54e346' ]
 		},
 		shape: {
-			type: 'circle',
+			type: 'image',
 			stroke: {
-				width: 0,
-				color: '#fff'
+				width: 700,
+				color: 'white'
 			},
 			polygon: {
-				nb_sides: 5
+				nb_sides: 8
 			},
 			image: {
-				src: 'https://cdn.freebiesupply.com/logos/large/2x/slack-logo-icon.png',
-				width: 100,
-				height: 100
+				src: "https://image.flaticon.com/icons/png/512/2041/2041593.png",
+				width: 700,
+				height: 700
 			}
 		},
 		
 		opacity: {
 			value: 1,
-			random: false,
+			random: true,
 			anim: {
 				enable: false,
 				speed: 1,
@@ -39,20 +39,20 @@ particlesJS('particles-js', {
 			}
 		},
 		size: {
-			value: 8,
+			value: 10,
 			random: true,
 			anim: {
 				enable: false,
 				speed: 10,
-				size_min: 10,
+				size_min: 100,
 				sync: false
 			}
 		},
 		line_linked: {
 			enable: true,
-			distance: 150,
-			color: '#808080',
-			opacity: 0.4,
+			distance: 100,
+			color: '#FFFFFF',
+			opacity: 0.9,
 			width: 1
 		},
 		move: {
@@ -62,7 +62,7 @@ particlesJS('particles-js', {
 			random: false,
 			straight: false,
 			out_mode: 'out',
-			bounce: false,
+			bounce: true,
 			attract: {
 				enable: false,
 				rotateX: 600,
