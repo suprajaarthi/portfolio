@@ -26,23 +26,23 @@ const moocscards = [
   //   moocLink: "https://www.udemy.com/certificate/UC-7f90ef9b-33c5-40ee-aa6a-9de327989da4/",
   // },
   {
-    title: "Flutter App Development",
+    title: "AI applications in Azure",
     cardImage: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~9A879RXF6TNM/CERTIFICATE_LANDING_PAGE~9A879RXF6TNM.jpeg",
     moocLink: "https://www.udemy.com/certificate/UC-d7f1cfbf-4062-4787-accd-15d39b72db8f/",
   },
   {
-    title: "Full Stack Web Development",
+    title: "AWS on ML ",
     cardImage: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~CFR933QMXUMB/CERTIFICATE_LANDING_PAGE~CFR933QMXUMB.jpeg",
     moocLink: "https://www.udemy.com/certificate/UC-316ed0ff-10d4-4642-8385-54ce275bfbf8/",
   },
   {
-    title: "Data Structures and Algorithms",
+    title: "Career Edge Training on Soft skills ",
     cardImage: "assets/images/education-page/IO.png",
     moocLink: "https://www.udemy.com/certificate/UC-c400bebf-8294-4cfd-8042-46f8e7a8b0ae/",
   },
  
   {
-    title: "Data Engineering for Everyone",
+    title: "Data Engineering fusing Python",
     cardImage: "assets/images/education-page/DC-DE.png",
     moocLink: "https://www.datacamp.com/statement-of-accomplishment/course/c9a60c926a34406f1d44e46ab2cb91e8aeab2220",
   },
@@ -66,7 +66,7 @@ const moocscards = [
   },
 
   {
-    title: "Full Stack Web Development",
+    title: "Intro to Datascience",
     cardImage: "assets/images/education-page/Ed-py.png",
     moocLink: "https://courses.edx.org/certificates/9ed134fcaf3d4e689b40948491745e79",
   },
@@ -76,22 +76,22 @@ const moocscards = [
   //   moocLink: "https://courses.edx.org/certificates/748697de8bb74ea395ae384102d3b7eb",
   // },
   {
-    title: "Blockchain & Cryptocurrency",
+    title: "Angular - Front End Development",
     cardImage: "assets/images/education-page/GL.png",
     moocLink: "https://www.udacity.com/course/intro-to-html-and-css--ud001",
   },
   {
-    title: "TCS ION",
-    cardImage: "assets/images/education-page/HR.png",
+    title: "Python Assessment Completion",
+    cardImage: "assets/images/education-page/Hack.png",
     moocLink: "https://www.coursera.org/learn/machine-learning",
   },
   {
-    title: "Sequences, Time Series in Tensorflow",
+    title: "Cyber Security Fundamnetals",
     cardImage: "assets/images/education-page/Cursa.png",
     moocLink: "https://www.coursera.org/learn/machine-learning",
   },
   {
-    title: "Full Stack Web Development",
+    title: "Intro to NLP ",
     cardImage: "assets/images/education-page/NLP.png",
     moocLink: "https://www.udemy.com/certificate/UC-316ed0ff-10d4-4642-8385-54ce275bfbf8/",
   },
