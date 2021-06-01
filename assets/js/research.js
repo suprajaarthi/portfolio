@@ -1,163 +1,118 @@
 /*Research Details Table*/
 
 const researchTable = document.querySelector(".main");
+const citeTable1 = document.querySelector(".citeT1");
+const citeTable2 = document.querySelector(".citeT2");
+const citeTable3 = document.querySelector(".citeT3");
+const citeTable4 = document.querySelector(".citeT4");
+const citeTable5 = document.querySelector(".citeT5");
+const citeTable6 = document.querySelector(".citeT6");
+const citeTable7 = document.querySelector(".citeT7");
+const citeTable8 = document.querySelector(".citeT8");
 
 const research = [
     {
-        title : "A Batch Normalized Inference Network Keeps the KL Vanishing Away",
-        authors : "Qile Zhu, Wei Bi, Xiaojiang Liu, Xiyao Ma, Xiaolin Li and Dapeng Wu",
-        conferences : "The 58th Annual Meeting of the Association for Computational Linguistics",
-        researchYr : 2020,
-        citebox : "popup1",
-        image : "assets/images/research-page/inteferenceNetwork.png",
-        citation: {
-            vancouver: "Qile Zhu, Wei Bi, Xiaojiang Liu, Xiyao Ma, Xiaolin Li and Dapeng Wu. A Batch Normalized Inference Network Keeps the KL Vanishing Away. The 58th Annual Meeting of the Association for Computational Linguistics 2020."
-        },
-        abstract: "This is currently left empty and this can be considered as a dummy data 1",
-        absbox: "absPopup1"
+        title : "Prevention of phishing attacks in voting system using visual cryptography implemented using Dual OTP techniques and virtual admin system",
+        authors : "A. Amrutha Rose,Paradise Mercy Praise,G. Jaspher Willsie Kathrine,Eligious C Kalaivani",
+        conferences : "3rd International Conference in International Conference on Trends in Electronics and Informatics (ICOEI)",
+        researchYr : 2019,
+        citebox:"http://icoei.com/2021/",
+        // citebox : "https://docs.google.com/presentation/d/1vp5oCT7PJHDsnFu2yIYPyXQvPJ7EdPVfQP7_tHGpMGs/edit?usp=sharing",
+        image : "https://innovationatwork.ieee.org/wp-content/uploads/2019/11/bigstock-Internet-Security-Firewall-Or-326464240_1024X684.png"
     },
 
     {
-        title : "A Call for More Rigor in Unsupervised Cross-lingual Learning",
-        authors : "Mikel Artetxe, Sebastian Ruder, Dani Yogatama, Gorka Labaka and Eneko Agirre",
-        conferences : "The 58th Annual Meeting of the Association for Computational Linguistics",
-        researchYr : 2020,
-        citebox : "popup2",
-        image : "assets/images/research-page/crossLingual.png",
-        citation: {
-            vancouver: "Mikel Artetxe, Sebastian Ruder, Dani Yogatama, Gorka Labaka and Eneko Agirre. A Call for More Rigor in Unsupervised Cross-lingual Learning. The 58th Annual Meeting of the Association for Computational Linguistics 2020."
-        },
-        abstract: "This is currently left empty and this can be considered as a dummy data 2",
-        absbox: "absPopup2"
+        
+        title : "Smart Trip planning website to organize the tour in a smooth and planned manner while tracking the expense lively",
+        authors : "Agostino Nuzzolo,Comi Antonio,Luca Rosati",
+        conferences : "International Conference on Intelligent Transportation Systems",
+        researchYr : 2015,
+        citebox : "https://www.ieee-itss.org/itsc",
+        image:"https://www.aheadrm.com/wp-content/uploads/2018/04/package-allotment.jpg",
+        // image : "https://www.techjockey.com/blog/wp-content/uploads/2018/11/Manage-Your-Agency-with-The-Best-Tour-Travel-Software_1.png"
+    },
+    {
+        title : "Ecommerce network with price coparison websites, to debug the price of products from differnet participating retailers such as Amazon,Flipkart",
+        authors : "Ladislav Beranek,Radim Remes",
+        conferences : "International Conference on Advanced Computer Information Technologies (ACIT)",
+        researchYr : 2019,
+        citebox : "http://www.acit.in/",
+        image : "https://www.softpal.com/portals/97/images/ecommerce_products/content_promotion.png"
     },
 
     {
-        title : "A Comprehensive Analysis of Preprocessing for Word Representation Learning in Affective Tasks",
-        authors : "Nastaran Babanejad, Ameeta Agrawal, Aijun An and Manos Papagelis",
-        conferences : "The 58th Annual Meeting of the Association for Computational Linguistics",
-        researchYr : 2020,
-        citebox : "popup3",
-        image : "assets/images/research-page/wordRepresentation.png",
-        citation: {
-            vancouver: "Nastaran Babanejad, Ameeta Agrawal, Aijun An and Manos Papagelis. A Comprehensive Analysis of Preprocessing for Word Representation Learning in Affective Tasks. The 58th Annual Meeting of the Association for Computational Linguistics 2020."
-        },
-        abstract: "This is currently left empty and this can be considered as a dummy data 3",
-        absbox: "absPopup3"
+        title : "Real-Time loclaized Multi Object detection  using Deep Learning and Flutter",
+        authors : "Cong Tang,Yunsong Feng,Xing Yang,Chao Zheng",
+        conferences : "International Conference on Information Science and Control Engineering (ICISCE)",
+        researchYr : 2019,
+        citebox : "http://www.icisce.org/",
+        image : "https://business.blogthinkbig.com/wp-content/uploads/sites/2/2019/04/eye-2771174_1920.jpg"
     },
 
-    {
-        title : "A Contextual Hierarchical Attention Network with Adaptive Objective for Dialogue State Tracking",
-        authors : "Yong Shan, Zekang Li, Jinchao Zhang, Fandong Meng, Yang Feng, Cheng Niu and Jie Zhou",
-        conferences : "The 58th Annual Meeting of the Association for Computational Linguistics",
-        researchYr : 2020,
-        citebox : "popup4",
-        image : "assets/images/research-page/dialogueState.png",
-        citation: {
-            vancouver: "Yong Shan, Zekang Li, Jinchao Zhang, Fandong Meng, Yang Feng, Cheng Niu and Jie Zhou. A Contextual Hierarchical Attention Network with Adaptive Objective for Dialogue State Tracking. The 58th Annual Meeting of the Association for Computational Linguistics 2020."
-        },
-        abstract: "This is currently left empty and this can be considered as a dummy data 4",
-        absbox: "absPopup4"
-    },
-
-    {
-        title : "Dual Super-Resolution Learning for Semantic Segmentation",
-        authors : "Wang, Li and Li, Dong and Zhu, Yousong and Tian, Lu and Shan, Yi",
-        conferences : "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-        researchYr : 2020,
-        citebox : "popup5",
-        image : "assets/images/research-page/semanticSegmentation.png",
-        citation: {
-            vancouver: "Wang, Li and Li, Dong and Zhu, Yousong and Tian, Lu and Shan, Yi. Dual Super-Resolution Learning for Semantic Segmentation. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020."
-        },
-        abstract: "This is currently left empty and this can be considered as a dummy data 5",
-        absbox: "absPopup5"
-    },
-
-    {
-        title : "Deep Unfolding Network for Image Super-Resolution",
-        authors : "Zhang, Kai and Van Gool, Luc and Timofte, Radu",
-        conferences : "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-        researchYr : 2020,
-        citebox : "popup6",
-        image : "assets/images/research-page/deepNetwork.png",
-        citation: {
-            vancouver: "Zhang, Kai and Van Gool, Luc and Timofte, Radu. Deep Unfolding Network for Image Super-Resolution. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020."
-        },
-        abstract: "This is currently left empty and this can be considered as a dummy data 6",
-        absbox: "absPopup6"
-    },
-
-    {
-        title : "Unsupervised Learning for Intrinsic Image Decomposition From a Single Image",
-        authors : "Liu, Yunfei and Li, Yu and You, Shaodi and Lu, Feng",
-        conferences : "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-        researchYr : 2020,
-        citebox : "popup7",
-        image : "assets/images/research-page/imageDecomposition.png",
-        citation: {
-            vancouver: "Liu, Yunfei and Li, Yu and You, Shaodi and Lu, Feng. Unsupervised Learning for Intrinsic Image Decomposition From a Single Image. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020."
-        },
-        abstract: "This is currently left empty and this can be considered as a dummy data 7",
-        absbox: "absPopup7"
-    },
-    {
-        title : "Forward and Backward Information Retention for Accurate Binary Neural Networks",
-        authors : "Qin, Haotong and Gong, Ruihao and Liu, Xianglong and Shen, Mingzhu and Wei, Ziran and Yu, Fengwei and Song, Jingkuan",
-        conferences : "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-        researchYr : 2020,
-        citebox : "popup8",
-        image : "assets/images/research-page/neuralNetworks.jpg",
-        citation: {
-            vancouver: "Qin, Haotong and Gong, Ruihao and Liu, Xianglong and Shen, Mingzhu and Wei, Ziran and Yu, Fengwei and Song, Jingkuan. Forward and Backward Information Retention for Accurate Binary Neural Networks. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020."
-        },
-        abstract: "This is currently left empty and this can be considered as a dummy data 8",
-        absbox: "absPopup8"
-    }
 ];
-   
+
+const cite1 = [{
+
+}];
+
+const cite2 = [{
+
+}];
+
 const fillData = () => {
     let output = "";
     research.forEach(
-        ({image, title, authors, conferences, researchYr, citebox, citation, absbox, abstract}) =>
+        ({image, title, authors, conferences, researchYr, citebox}) =>
         (output +=`
             <tr> 
-                <td class="imgCol"><img src="${image}" class="rImg"></td>
-                <td class = "researchTitleName">
-                    <div>
-                        <span class="imgResponsive">
-                            <img src="${image}" class="imgRes">
-                        </span>
-                    </div>
-                    <a href="#0" class="paperTitle"> ${title} </a> 
-                    <div> ${authors} </div> <div class="rConferences"> ${conferences} 
-                        <div class="researchY">${researchYr}</div>
-                    </div>
+            <td class="imgCol"><img src="${image}" class="rImg"></td>
+            <td class = "researchTitleName">
+            <div><span class="imgResponsive"><img src="${image}" class="imgRes"></span></div>
+            <br><br><br>
+            <a href="#0" class="paperTitle"> ${title} </a> <br><br>
+            <div> ${authors} </div> 
+            <br><div class="rConferences"> ${conferences} 
+            <div class="researchY">${researchYr}</div>
+            </div>
         
-                    <!--CITE BUTTON-->
-                    <div class="d-flex" style="margin-right:5%;">
-                        <button class="button button-accent button-small text-right button-abstract " type="button" data-toggle="collapse" data-target="#${absbox}" aria-expanded="false" aria-controls="${absbox}">
-                            ABSTRACT
-                        </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                
-                        <button class="button button-accent button-small text-right button-abstract " type="button" data-toggle="collapse" data-target="#${citebox}" aria-expanded="false" aria-controls="${citebox}">
-                            BIBTEX
-                        </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </div>
-                    <div id="${absbox}" class="collapse" aria-labelledby="headingTwo" data-parent=".collapse">
-                        <div class="card-body">
-                            ${abstract}    
-                        </div>
-                    </div>
-                    <div id="${citebox}" class="collapse" aria-labelledby="headingTwo" data-parent=".collapse">
-                        <div class="card-body">
-                            ${citation.vancouver}    
-                        </div>
-                    </div>
-                </td>
-            </tr>`)
+            <!--CITE BUTTON-->
+            <div>
+            
+            <a href="${citebox}" class="button button-accent button-small button-cite">CITE</a
+
+            </div>
+            </td>
+            </tr>
+            `)
         );
     researchTable.innerHTML = output;
-
 };
 document.addEventListener("DOMContentLoaded", fillData);
 
+const citeData1 = () => {
+    let output = "";
+    cite1.forEach(
+        ({vancouver, bibtex}) =>
+        (output += `
+        <tr> <td class="left-cell"> Vancouver </td> <td class="right-cell">${vancouver} </td></tr>
+                    <tr> <td class="left-cell"> BibTeX </td> <td class="right-cell"> ${bibtex}
+                    </td></tr>                     
+        `)
+    );
+    citeTable1.innerHTML = output;
+};
+document.addEventListener("DOMContentLoaded", citeData1);
+
+const citeData2 = () => {
+    let output = "";
+    cite2.forEach(
+        ({vancouver, bibtex}) =>
+        (output += `
+        <tr> <td class="left-cell"> Vancouver </td> <td class="right-cell">${vancouver} </td></tr>
+                    <tr> <td class="left-cell"> BibTeX </td> <td class="right-cell"> ${bibtex}
+                    </td></tr>                     
+        `)
+    );
+    citeTable2.innerHTML = output;
+};
+document.addEventListener("DOMContentLoaded", citeData2);
