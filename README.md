@@ -1,5 +1,5 @@
 
-https://supraja.netlify.app/
+http://www.supraja.me/ 
 
 <h1 align= "center"><b>Awesome Portfolio Websites</b></h1> 
 
